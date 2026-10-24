@@ -10,6 +10,7 @@
   "landmarkNote": "点击地标，在地图上查看位置。",
   "trackSource": "依据官方路线图和道路顺序复原",
   "imageryZoom": 13,
+  "detailImageryZoom": 17,
   "demZoom": 12,
   "routeColor": "#43c7ff",
   "stats": {
