@@ -1,0 +1,49 @@
+{
+  "title": "成都马拉松全马",
+  "subtitle": "从金沙出发，一路跑向世纪城 · 2026-10-25 · 42.195 km",
+  "routeLabel": "金沙遗址博物馆 → 世纪城",
+  "madeOn": "2026-10-24",
+  "recordedOn": null,
+  "startName": "金沙遗址博物馆",
+  "finishName": "成都世纪城新国际会展中心",
+  "landmarkTitle": "赛道地标",
+  "landmarkNote": "点击地标，在地图上查看位置。",
+  "trackSource": "依据官方路线图和道路顺序复原",
+  "imageryZoom": 13,
+  "demZoom": 12,
+  "routeColor": "#43c7ff",
+  "stats": {
+    "sourceDistanceKm": 42.195,
+    "gainM": null,
+    "lossM": null,
+    "durationHours": null
+  },
+  "statsSource": "成都马拉松官方竞赛规程：全程42.195公里",
+  "landmarks": [
+    {
+      "name": "人民南路折返",
+      "index": 159,
+      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+    },
+    {
+      "name": "双林路折返",
+      "index": 266,
+      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+    },
+    {
+      "name": "新九眼桥",
+      "index": 404,
+      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+    },
+    {
+      "name": "环球中心",
+      "index": 521,
+      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+    },
+    {
+      "name": "华阳大道折返",
+      "index": 573,
+      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+    }
+  ]
+}
