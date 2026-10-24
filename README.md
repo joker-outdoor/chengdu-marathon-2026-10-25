@@ -4,11 +4,11 @@
 
 [打开 3D 路线地图](https://joker-outdoor.github.io/chengdu-marathon-2026-10-25/) · [下载 GPX](data/route.gpx) · [打开 2D 俯视图](https://joker-outdoor.github.io/chengdu-marathon-2026-10-25/?view=2d)
 
-页面提供真实卫星底图、3D 地形、2D 俯视、地标交互、联动海拔剖面与手机布局，并支持城市建筑开关、独立可调的建筑高度、沿线飞行的进度与倍速控制，以及按需加载的高清近景地表。
+页面提供真实卫星底图、3D 地形、2D 俯视、地标交互、联动海拔剖面与手机布局，并支持城市建筑开关、独立可调的建筑高度、沿线飞行的进度与倍速控制，以及按需加载的高清近景地表。飞行在折返和急弯处减速，以渐变转向舒缓镜头；沿线显示 1–42 公里标记。
 
 ## 距离与轨迹口径
 
-官方全马距离为 **42.195 km**；复原坐标测算距离约 **43.72 km**。页面主里程使用官方距离，轨迹定位与海拔剖面使用坐标测距；保留复原坐标，不拉伸坐标来凑官方距离。
+官方全马距离为 **42.195 km**；复原坐标测算距离约 **43.72 km**。公里标记按官方全程 42.195 km 与轨迹几何长度等比例定位：第 k 公里对应几何累计距离 k ÷ 42.195 × 43.720348397743535 km，显示 1–42 公里标记。飞行读数、地标里程与海拔剖面横轴统一使用官方 42.195 km 口径；轨迹定位仍使用原坐标和几何测距。
 
 GPX 只包含路线名称、坐标和海拔，没有时间、速度或成绩。海拔来自 DEM 采样；累计爬升、下降及用时未提供，不把地形采样起伏累计为运动成绩。
 
@@ -23,8 +23,8 @@ GPX 只包含路线名称、坐标和海拔，没有时间、速度或成绩。�
 
 ## 模板版本
 
-复用 [Joker Outdoor 路线可视化模板](https://github.com/joker-outdoor/route-visualization-template)，版本 [`37ea8f97fbd75c4dc112fa4a21354111468fcfdf`](https://github.com/joker-outdoor/route-visualization-template/commit/37ea8f97fbd75c4dc112fa4a21354111468fcfdf)。保留模板的生成器、页面交互、样式与依赖；数据处理实现与规则以该模板为唯一来源，本仓库仅同步使用，不另行维护一套核心实现。Three.js 0.160.0 使用 MIT 许可，见 `vendor/LICENSE`。
+复用 [Joker Outdoor 路线可视化模板](https://github.com/joker-outdoor/route-visualization-template)，版本 [`35c05aecfedbebe35dcb76ac323a5ad03a576281`](https://github.com/joker-outdoor/route-visualization-template/commit/35c05aecfedbebe35dcb76ac323a5ad03a576281)。保留模板的生成器、页面交互、样式与依赖；数据处理实现与规则以该模板为唯一来源，本仓库仅同步使用，不另行维护一套核心实现。Three.js 0.160.0 使用 MIT 许可，见 `vendor/LICENSE`。
 
-本仓库使用已准备好的 `data/route.json`、`route.gpx`、`terrain.json`、`satellite.jpg`、`buildings.json`、`imagery-detail.json` 与 `imagery-detail/` 下的 85 个 JPEG 分块，以及根目录 `route.config.json`。路线点、统计与地标保持原样，route.json 仅新增建筑与近景影像文件引用；原始输入、OSM 全量资料及官方 JPG 不纳入发布内容。
+本仓库使用已准备好的 `data/route.json`、`route.gpx`、`terrain.json`、`satellite.jpg`、`buildings.json`、`imagery-detail.json` 与 `imagery-detail/` 下的 85 个 JPEG 分块，以及根目录 `route.config.json`。本轮仅在两份路线 JSON 中追加 `kilometerMarkers` 配置；路线点、统计、地标及来源、建筑与近景影像引用、其它数据文件均保持原样。原始输入、OSM 全量资料及官方 JPG 不纳入发布内容。
 
 `buildings.json` 是自动生成的建筑几何，已通过 `scripts/check_data.py` 数据校验；Git 差异按数据资产显示，不展开几何数值。该校验不代表逐数值或逐建筑的视觉核对。

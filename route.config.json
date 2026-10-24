@@ -46,5 +46,9 @@
       "index": 573,
       "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
     }
-  ]
+  ],
+  "kilometerMarkers": {
+    "distanceKm": 42.195,
+    "positionSource": "官方赛程长度取自成都马拉松竞赛规程"
+  }
 }
