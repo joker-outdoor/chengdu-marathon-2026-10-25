@@ -6400,5 +6400,9 @@
     }
   ],
   "buildingsFile": "buildings.json",
-  "imageryDetailFile": "imagery-detail.json"
+  "imageryDetailFile": "imagery-detail.json",
+  "kilometerMarkers": {
+    "distanceKm": 42.195,
+    "positionSource": "官方赛程长度取自成都马拉松竞赛规程"
+  }
 }
