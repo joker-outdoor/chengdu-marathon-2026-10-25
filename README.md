@@ -26,3 +26,5 @@ GPX 只包含路线名称、坐标和海拔，没有时间、速度或成绩。�
 复用 [Joker Outdoor 路线可视化模板](https://github.com/joker-outdoor/route-visualization-template)，版本 [`37ea8f97fbd75c4dc112fa4a21354111468fcfdf`](https://github.com/joker-outdoor/route-visualization-template/commit/37ea8f97fbd75c4dc112fa4a21354111468fcfdf)。保留模板的生成器、页面交互、样式与依赖；数据处理实现与规则以该模板为唯一来源，本仓库仅同步使用，不另行维护一套核心实现。Three.js 0.160.0 使用 MIT 许可，见 `vendor/LICENSE`。
 
 本仓库使用已准备好的 `data/route.json`、`route.gpx`、`terrain.json`、`satellite.jpg`、`buildings.json`、`imagery-detail.json` 与 `imagery-detail/` 下的 85 个 JPEG 分块，以及根目录 `route.config.json`。路线点、统计与地标保持原样，route.json 仅新增建筑与近景影像文件引用；原始输入、OSM 全量资料及官方 JPG 不纳入发布内容。
+
+`buildings.json` 是自动生成的建筑几何，已通过 `scripts/check_data.py` 数据校验；Git 差异按数据资产显示，不展开几何数值。该校验不代表逐数值或逐建筑的视觉核对。
