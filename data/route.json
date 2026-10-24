@@ -6398,5 +6398,7 @@
       "index": 573,
       "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
     }
-  ]
+  ],
+  "buildingsFile": "buildings.json",
+  "imageryDetailFile": "imagery-detail.json"
 }
