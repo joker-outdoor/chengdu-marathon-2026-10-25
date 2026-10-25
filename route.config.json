@@ -2,49 +2,55 @@
   "title": "成都马拉松全马",
   "subtitle": "从金沙出发，一路跑向世纪城 · 2026-10-25 · 42.195 km",
   "routeLabel": "金沙遗址博物馆 → 世纪城",
-  "madeOn": "2026-10-24",
-  "recordedOn": null,
+  "madeOn": "2026-10-25",
+  "recordedOn": "2026-10-25",
   "startName": "金沙遗址博物馆",
   "finishName": "成都世纪城新国际会展中心",
   "landmarkTitle": "赛道地标",
   "landmarkNote": "点击地标，在地图上查看位置。",
-  "trackSource": "依据官方路线图和道路顺序复原",
+  "trackSource": "Apple 健康经 JPB 同步的 Joker 本人实际运动轨迹",
   "imageryZoom": 13,
   "detailImageryZoom": 17,
   "demZoom": 12,
   "routeColor": "#43c7ff",
   "stats": {
-    "sourceDistanceKm": 42.195,
-    "gainM": null,
+    "sourceDistanceKm": 43.66188970686067,
+    "gainM": 110.53,
     "lossM": null,
-    "durationHours": null
+    "durationHours": 3.7249637302425174,
+    "pauseSeconds": 0
   },
-  "statsSource": "成都马拉松官方竞赛规程：全程42.195公里",
+  "statsSource": "Apple 健康经 JPB 同步的本人运动汇总：手表距离 43.66 km、累计爬升 110.53 m；总耗时取运动起止时间差，暂停取总耗时减运动时长（微小浮点误差归零）；累计下降未提供",
   "landmarks": [
     {
       "name": "人民南路折返",
-      "index": 159,
-      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+      "positionSource": "从基线地标 WGS84 坐标匹配本人实际 GPS 轨迹，按发生顺序核验；取实际折返顶点",
+      "lon": 104.06360228810172,
+      "lat": 30.6529440129099
     },
     {
       "name": "双林路折返",
-      "index": 266,
-      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+      "positionSource": "从基线地标 WGS84 坐标匹配本人实际 GPS 轨迹，按发生顺序核验；取实际折返顶点",
+      "lon": 104.10776136386106,
+      "lat": 30.655295415906668
     },
     {
       "name": "新九眼桥",
-      "index": 404,
-      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+      "positionSource": "从基线地标 WGS84 坐标匹配本人实际 GPS 轨迹，按发生顺序核验；取邻近实际轨迹点",
+      "lon": 104.08720927428703,
+      "lat": 30.629365202219716
     },
     {
       "name": "环球中心",
-      "index": 521,
-      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+      "positionSource": "从基线地标 WGS84 坐标匹配本人实际 GPS 轨迹，按发生顺序核验；取邻近实际轨迹点",
+      "lon": 104.06589350730107,
+      "lat": 30.57464175412231
     },
     {
       "name": "华阳大道折返",
-      "index": 573,
-      "positionSource": "官方赛道顺序与 OpenStreetMap WGS84 道路坐标对照"
+      "positionSource": "从基线地标 WGS84 坐标匹配本人实际 GPS 轨迹，按发生顺序核验；取实际折返顶点",
+      "lon": 104.06784254713895,
+      "lat": 30.506899565475774
     }
   ],
   "kilometerMarkers": {
